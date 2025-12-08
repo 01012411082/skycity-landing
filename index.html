@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سكاي سيتي بنها: أضخم كمباوند سكني تجاري في قلب القليوبية | Sky City Banha</title>
+    <meta name="keywords" content="كمباوند سكني تجاري بنها, عقارات بنها, شقق للبيع بنها, سكاي سيتي بنها, كمباوند القليوبية, شقق بالتقسيط بنها">
+    <meta name="description" content="اكتشف Sky City Banha، أضخم كمباوند سكني - تجاري بمدينة بنها. وحدات فاخرة بمساحات تبدأ من 127م، نادي اجتماعي، ومول تجاري ضخم. مقدم 10% وتسهيلات تصل لـ 6 سنوات.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* التنسيقات الأساسية */
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        header {
+            background: linear-gradient(90deg, #005A9C, #007ACC); /* ألوان شعار سكاي سيتي */
+            color: white;
+            padding: 10px 0;
+            border-bottom: 5px solid #FFC300;
+        }
+        .logo h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 900;
+            text-align: center;
+        }
+        .logo span {
+            color: #FFC300; /* تغيير لون نص الشعار للتفرد */
+        }
+
+        /* قسم البطل (Hero Section) */
+        #hero {
+            background: url('https://via.placeholder.com/1200x600/007ACC/FFFFFF?text=Sky+City+Banha+New+Life') no-repeat center center/cover;
+            color: white;
+            min-height: 500px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+        }
+        #hero h2 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        #hero p {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #FFC300;
+            color: #005A9C;
+            padding: 15px 30px;
+            font-size: 1.3em;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .cta-button:hover {
+            background: #e6b000;
+        }
+
+        /* قسم المميزات (Features) */
+        #features {
+            padding: 40px 0;
+            background: white;
+        }
+        #features h3 {
+            text-align: center;
+            color: #007ACC;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .feature-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.33% - 20px);
+            min-width: 280px;
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card h4 {
+            color: #005A9C;
+            font-size: 1.3em;
+            border-bottom: 2px solid #FFC300;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        .highlight {
+            font-weight: 700;
+            color: #d90000;
+        }
+
+        /* قسم الفورم (Form Section) */
+        #contact {
+            background: #005A9C;
+            color: white;
+            padding: 50px 0;
+        }
+        .form-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+        .form-text {
+            flex: 1;
+        }
+        .form-text h3 {
+            font-size: 2em;
+            border-bottom: 3px solid #FFC300;
+            padding-bottom: 10px;
+        }
+        #contact-form {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        #contact-form input, #contact-form button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        #contact-form button {
+            background: #FFC300;
+            color: #005A9C;
+            cursor: pointer;
+            font-weight: 700;
+            transition: background 0.3s;
+        }
+        #contact-form button:hover {
+            background: #e6b000;
+        }
+        .message {
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: none;
+            font-weight: 700;
+        }
+        .message.success {
+            background: #4CAF50;
+            color: white;
+        }
+        .message.error {
+            background: #f44336;
+            color: white;
+        }
+        
+        /* Media Queries (لتحسين العرض على الموبايل) */
+        @media (max-width: 768px) {
+            .form-content {
+                flex-direction: column;
+            }
+            .feature-grid {
+                flex-direction: column;
+            }
+            .feature-card {
+                min-width: 100%;
+            }
+            #hero h2 {
+                font-size: 2em;
+            }
+            #hero p {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container logo">
+            <h1><span>Sky City</span> Banha</h1>
+            <p style="text-align: center; font-size: 0.9em; margin: 0;">وجهتك الأولى للحياة الفاخرة في قلب القليوبية</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-overlay">
+                <h2>أضخم كمباوند سكني - تجاري بمدينة بنها</h2>
+                <p>عيش الرفاهية الكاملة في **Sky City Banha**، بعيداً عن الزحام، بالقرب من شبكات الطرق الرئيسية.</p>
+                <a href="#contact" class="cta-button">اطلب التفاصيل والبروشور الآن</a>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <h3>لماذا تختار Sky City Banha؟</h3>
+                <div class="feature-grid">
+                    
+                    <div class="feature-card">
+                        <h4>الموقع الإستراتيجي 📍</h4>
+                        <p>على أطراف مدينة بنها، على الرياح التوفيقي بجوار مديرية الأمن.</p>
+                        <p>قريب جداً من شبكة الطرق المحورية: <span class="highlight">شبرا بنها الحر</span> و <span class="highlight">الإقليمي</span>، وقرب الموقف والمحطة.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h4>التصميم والمساحات 🏢</h4>
+                        <p>**12 برج سكني** بخمس إطلالات مختلفة.</p>
+                        <p>المساحات تبدأ من <span class="highlight">127م إلى 283م</span>. أصغر مساحة تتكون من <span class="highlight">3 غرف و 2 حمام و ريسيبشن قطعتين بنظام بانورامي</span>. 👍</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h4>الترفيه والخدمات ✨</h4>
+                        <ul>
+                            <li>نادي اجتماعي متكامل.</li>
+                            <li>تراك رياضي على الرووف 🏃.</li>
+                            <li><span class="highlight">لاند سكيب وسكاي لايت</span> بمساحة **6000 متر** 👌.</li>
+                        </ul>
+                    </div>
+                     <div class="feature-card">
+                        <h4>المول التجاري والتسهيلات 🛍️</h4>
+                        <p>أكبر مول تجاري بمساحة <span class="highlight">36000 متر</span> 🤔.</p>
+                        <p>نظام سداد مريح: <span class="highlight">مقدمات تبدأ من 10%</span> وتسهيلات على **6 سنوات**.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container form-content">
+                <div class="form-text">
+                    <h3>لا تفوت فرصة الاستثمار في بنها الجديدة!</h3>
+                    <p>سجل الآن للحصول على البروشور الكامل، جدول المساحات والأسعار، واستفد من أولوية الحجز.</p>
+                </div>
+                
+                <form id="contact-form" method="POST">
+                    <input type="text" name="الاسم" placeholder="الاسم الكريم" required>
+                    <input type="tel" name="الهاتف" placeholder="رقم الهاتف (مفتاح الدولة)" required>
+                    <input type="email" name="البريد الإلكتروني" placeholder="البريد الإلكتروني" required>
+                    <input type="hidden" name="المصدر" value="صفحة هبوط بنها">
+                    <button type="submit">اطلب التفاصيل الآن</button>
+                    <div class="message" id="form-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p style="text-align: center; padding: 15px; background: #333; color: white; margin: 0;">&copy; 2025 Sky City Banha. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        // ======= الجزء الخاص بربط النموذج بـ Google Sheets =======
+        
+        // 1. استبدل هذا الرابط برابط "Web App URL" الخاص بورقة Google Sheet
+        const GOOGLE_SHEET_URL = 'YOUR_GOOGLE_SHEET_WEB_APP_URL_HERE';
+        
+        const form = document.getElementById('contact-form');
+        const message = document.getElementById('form-message');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            message.style.display = 'none'; // إخفاء الرسائل السابقة
+            message.classList.remove('success', 'error');
+
+            if (GOOGLE_SHEET_URL.includes('YOUR_GOOGLE_SHEET_WEB_APP_URL_HERE')) {
+                 message.textContent = 'الرجاء تحديث GOOGLE_SHEET_URL لربط البيانات بنجاح.';
+                 message.classList.add('error');
+                 message.style.display = 'block';
+                 return;
+            }
+
+            const formData = new FormData(form);
+            
+            // إضافة التاريخ والوقت لسهولة التتبع
+            formData.append('التاريخ', new Date().toLocaleString('ar-EG', { timeZone: 'Africa/Cairo' }));
+
+            fetch(GOOGLE_SHEET_URL, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    message.textContent = 'تم إرسال بياناتك بنجاح! سنتواصل معك قريباً.';
+                    message.classList.add('success');
+                    form.reset(); // تفريغ النموذج بعد النجاح
+                } else {
+                    message.textContent = 'حدث خطأ أثناء الإرسال. يرجى المحاولة لاحقاً.';
+                    message.classList.add('error');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                message.textContent = 'حدث خطأ في الاتصال. يرجى التأكد من رابط الخدمة.';
+                message.classList.add('error');
+            })
+            .finally(() => {
+                message.style.display = 'block';
+            });
+        });
+
+        // ======= نهاية الجزء الخاص بـ Google Sheets =======
+    </script>
+</body>
+</html>
+
+     
